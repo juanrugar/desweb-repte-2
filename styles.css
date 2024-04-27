@@ -90,8 +90,11 @@ td, th {
     text-align: left;
     padding: 8px;
   }
-legend {
-    font-weight:700 ;
+.services {
+    background-color: #e6eeff;
+    padding: 5px;
+    margin-bottom: 1em;
+    border-radius: 10px;
 }
 form input, #sector {
     font-size: 1em;
@@ -101,6 +104,10 @@ textarea {
 }
 .question-box {
     margin-bottom: 2em;
+}
+
+.rate-options {
+    display: block;
 }
 #total {
     background-color: #e6f3ff;
@@ -125,6 +132,9 @@ footer p {
     text-align: right;
 }       */
 @media screen and (max-width:1500px){
+    body {
+        background: url(/img/gaming.jpg) repeat center;
+    }
     textarea {
         width: 100%; 
     }

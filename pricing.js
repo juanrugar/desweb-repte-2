@@ -1,11 +1,7 @@
 
-//pricing parameters definition into variables 
-/* const sectorFares = [
-    {sector:"1", fare:0.12},
-    {sector:"2", fare:0.15},
-    {sector:"3", fare:0.20}
-]; */
-
+//This function calculates the cost base on the wordcount
+//multiplied by the sector of the translation
+//and modified by the rate (depending on the deadline for project delivery)
 
 function pricing() {
     let sector = document.getElementById("sector").value;
@@ -13,6 +9,7 @@ function pricing() {
     let rate = document.querySelector("input[name=rate]:checked").value;
     //https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors
 
+    // an empty variable to store the total and display results through the DOM 
     let wordCost;
     
     /*console.log(sector);
@@ -46,3 +43,13 @@ function pricing() {
 
 
 };
+
+/* trying to create a random changing image for each page
+const backImg = ["biotech.jpg", "engineering.jpg", "gaming.jpg"];
+let randImg = Math.floor(Math.random() *3);
+console.log(randImg);
+let select = backImg[randImg];
+console.log(select);
+document.body.style.backgroundImage = `url('${select}')`;
+
+*/

@@ -25,51 +25,61 @@
         <div>
             <h2>Cost of your project</h2>
             <p>Let us help you calculating the cost of your project.
-                Select the suitable sector covering the topic of your project from the list and the desired time period for project
+                Select the suitable sector covering the topic of your project from the list and the desired time period
+                for project
                 delivery.</p>
-            <p>Note that localization projects involve other procedures rathen than text translation and, therefore, are charged apart.</p>
-            
-            <form action="" method="post">
-                <fieldset>
-                <legend>Pricing Calculator</legend>
-                <div>
-                    <label for="sector">Sector</label>
-                    <select name="sector" id="sector">
-                        <option id="1">Technical</option>
-                        <option id="2">Biomedical</option>
-                        <option id="3">Localization</option>
-                    </select>
-                
-                    <label for="wordcount">Wordcount</label>
-                    <input type="number" id="wordcount" name="wordcount" placeholder="0"><br>
-                </div>
-                
-                    <label for="rate">Type of rate</label>
-                    <div>
-                        <input type="radio" id="normal" name="rate" value="normal" checked />
-                        <label for="normal">Normal (as scheduled)</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="short-notice" name="rate" />
-                        <label for="short-notice">Short notice (24-72 hours)</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="urgency" name="rate" value="urgency" />
-                        <label for="urgency">Urgency (less than 24 hours)</label>
-                    </div>
+            <p>*<em>Note that localization projects involve other procedures rathen than text translation and,
+                    therefore, are charged apart.</em></p>
 
-                </fieldset>
-                <input type="reset" value="reset" />
-                <input type="button" name="button" value="Submit" onclick="pricing()" />
+            <form action="" method="post">
+                <h3>Pricing Calculator</h3>
+                <hr>
+                <div class="services">
+                    <div>
+                        <label for="sector">
+                            <h4>Sector</h4>
+                        </label>
+
+                        <select name="sector" id="sector">
+                            <option id="1">Technical</option>
+                            <option id="2">Biomedical</option>
+                            <option id="3">Localization</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="wordcount">
+                            <h4>Wordcount</h4>
+                        </label>
+                        <input type="number" id="wordcount" name="wordcount" placeholder="0">
+                    </div>
+                    <div>
+                        <label for="rate">
+                            <h4>Type of rate</h4>
+                        </label>
+                        <div class="rate-options">
+                            <input type="radio" id="normal" name="rate" value="normal" checked />
+                            <label for="normal">Normal (as scheduled)</label>
+                            <input type="radio" id="short-notice" name="rate" />
+                            <label for="short-notice">Short notice (24-72 hours)</label>
+                            <input type="radio" id="urgency" name="rate" value="urgency" />
+                            <label for="urgency">Urgency (less than 24 hours)</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <input type="reset" value="reset" />
+                    <input type="button" name="button" value="Submit" onclick="pricing()" />
+                </div>
             </form>
             <div class="question-box">
                 <h5>Aproximate price for your project: </h5>
                 <p id="total"></p>
             </div>
         </div>
-      
+
     </main>
-   
+
 </body>
 
 </html>
