@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #000d1a;
+    background-color: #e6f3ff;
+    background: url(/img/biotech.jpg) repeat center;
+    background-size: cover;
+    padding: 0;
+    margin:0;
+}
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    background-color: #66b1fc;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 10;
+}
+.logo {
+    width: 100px;
+    border-radius: 20px;
+    margin-right: 20px;
+    float: left;
+    
+}
+h1{
+    font-weight: 800;
+    font-size: 2.5em;
+    float:left;
+}
+nav {
+    padding: 0.5em;
+    border: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+}
+nav a {
+    color: #000d1a;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+nav a:hover {
+    background-color: #dce0e5;
+    border-radius: 15px;
+}
+main { 
+    position: relative;
+    top: 6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #99ccff;
+    font-size: 1em ;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+main h2 {
+    text-shadow: 2px 2px 5px #6666ff;
+}
+main img {
+    width: 2.5em;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #fff;
+    float: left; 
+}
+.contact {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    max-width: 75%;
+    align-content: center;
+}
+hr {
+    color: #1a1aff;
+}
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+legend {
+    font-weight:700 ;
+}
+form input, #sector {
+    font-size: 1em;
+}
+textarea {
+    border-radius: 5px;
+}
+.question-box {
+    margin-bottom: 2em;
+}
+#total {
+    background-color: #e6f3ff;
+    height: 1.5rem;
+    color: #000d1a;
+    border: 1px solid  #000d1a
+}
+
+/*
+footer {
+    position: fixed;
+    bottom:0;
+    right: 0;
+    background-color: #4da6ff;
+    height: 40px; 
+    width:100%;
+    border: 0.2em solid #4da6ff;
+    border-radius: 3px;
+    
+}
+footer p {
+    text-align: right;
+}       */
+@media screen and (max-width:1500px){
+    textarea {
+        width: 100%; 
+    }
+}

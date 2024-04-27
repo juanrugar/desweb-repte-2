@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC L&T - Pricing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pricing.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="img/logo.png" />
+            <h1>VLC Langs & Tech</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Cost of your project</h2>
+            <p>Let us help you calculating the cost of your project.
+                Select the suitable sector covering the topic of your project from the list and the desired time period for project
+                delivery.</p>
+            <p>Note that localization projects involve other procedures rathen than text translation and, therefore, are charged apart.</p>
+            
+            <form action="" method="post">
+                <fieldset>
+                <legend>Pricing Calculator</legend>
+                <div>
+                    <label for="sector">Sector</label>
+                    <select name="sector" id="sector">
+                        <option id="1">Technical</option>
+                        <option id="2">Biomedical</option>
+                        <option id="3">Localization</option>
+                    </select>
+                
+                    <label for="wordcount">Wordcount</label>
+                    <input type="number" id="wordcount" name="wordcount" placeholder="0"><br>
+                </div>
+                
+                    <label for="rate">Type of rate</label>
+                    <div>
+                        <input type="radio" id="normal" name="rate" value="normal" checked />
+                        <label for="normal">Normal (as scheduled)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="short-notice" name="rate" />
+                        <label for="short-notice">Short notice (24-72 hours)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="urgency" name="rate" value="urgency" />
+                        <label for="urgency">Urgency (less than 24 hours)</label>
+                    </div>
+
+                </fieldset>
+                <input type="reset" value="reset" />
+                <input type="button" name="button" value="Submit" onclick="pricing()" />
+            </form>
+            <div class="question-box">
+                <h5>Aproximate price for your project: </h5>
+                <p id="total"></p>
+            </div>
+        </div>
+      
+    </main>
+   
+</body>
+
+</html>
